@@ -1,0 +1,116 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #d3d3d3, #f0f0f0);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    width: 340px;
+    text-align: center;
+    transition: 0.3s ease;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .input-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #666;
+  }
+  
+  button {
+    padding: 10px 14px;
+    cursor: pointer;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    transition: 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #555;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  li {
+    background-color: #fefefe;
+    padding: 12px;
+    margin-bottom: 12px;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    border-left: 5px solid #3a86ff;
+    transition: 0.3s ease;
+  }
+  
+  li input[type="checkbox"] {
+    margin-top: 5px;
+    accent-color: #3a86ff;
+  }
+  
+  li div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+  }
+  
+  li span {
+    font-weight: bold;
+  }
+  
+  li small {
+    font-size: 0.75rem;
+    color: #999;
+    margin-top: 4px;
+  }
+  
+  li span.delete {
+    color: #ff4d4f;
+    cursor: pointer;
+    margin-left: 10px;
+    font-weight: bold;
+  }
+  
+  li.completed {
+    background-color: #f5f5dc;
+    text-decoration: line-through;
+    color: gray;
+    box-shadow: 0 0 12px 2px rgba(255, 255, 0, 0.5);
+    border-left: 5px solid #ffd700;
+    border-radius: 10px;
+  }
+  
