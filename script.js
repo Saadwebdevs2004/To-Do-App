@@ -1,10 +1,9 @@
-// script.js
 
 const addBtn = document.getElementById("addBtn");
 const taskInput = document.getElementById("taskInput");
 const taskList = document.getElementById("taskList");
 
-// Load tasks on page load
+
 window.onload = () => {
   const tasks = JSON.parse(localStorage.getItem("tasks")) || [];
   tasks.forEach(task => addTaskToDOM(task));
@@ -23,7 +22,7 @@ addBtn.addEventListener("click", () => {
   taskInput.value = "";
 });
 
-// ENTER key triggers Add Task
+
 taskInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") {
     addBtn.click();
